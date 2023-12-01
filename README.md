@@ -38,7 +38,7 @@ the word "better":
 ```python
 import this
 
-zen = "".join([this.d.get(c, c) for c in this.s])
+zen = "".join(this.d.get(c, c) for c in this.s)
 
 
 def test_zen(patterns):
@@ -311,7 +311,7 @@ current patterns into a separate fixture that can be activated as needed:
 import pytest
 import this
 
-zen = "".join([this.d.get(c, c) for c in this.s])
+zen = "".join(this.d.get(c, c) for c in this.s)
 
 
 @pytest.fixture
